@@ -1,0 +1,99 @@
+.posts {
+    margin-top: 5vw;
+    transform-style: preserve-3d;
+    position: relative;
+    perspective: 1440px;
+    overflow: hidden;
+    color: #ffffff;
+}
+
+.posts .post-nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.posts .post-nav h1 {
+    font-family: 'Poppins', serif;
+    font-size: 3vw;
+}
+
+.posts .post-nav button {
+    margin-left: 6vw;
+    height: 3vw;
+    width: 6vw;
+    border: none;
+    background-color: #009bff;
+    color: #000;
+    font-size: 1.5vw;
+    font-family: 'Poppins', serif;
+    transition: all .5s;
+}
+
+.posts .post-nav button:hover {
+    color: #ddd;
+}
+
+.posts .view {
+    width: 80vw;
+    height: 50vw;
+    transform-style: preserve-3d;
+    margin: 100px auto;
+    transform: translateZ(1440px) rotateY(0deg);
+    animation: animation 100s linear infinite;
+}
+
+.posts .view .post-summary {
+    width: 1000px;
+    height: 50vw;
+    line-height: 120px;
+    position: absolute;
+    border: 4px solid #ffffff;
+    border-radius: 100px;
+}
+
+.box-1 {
+    transform: rotateY(0deg) translateZ(1440px);
+}
+
+.box-2 {
+    transform: rotateY(40deg) translateZ(1440px);
+}
+
+.box-3 {
+    transform: rotateY(80deg) translateZ(1440px);
+}
+
+.box-4 {
+    transform: rotateY(120deg) translateZ(1440px);
+}
+
+.box-5 {
+    transform: rotateY(160deg) translateZ(1440px);
+}
+
+.box-6 {
+    transform: rotateY(200deg) translateZ(1440px);
+}
+
+.box-7 {
+    transform: rotateY(240deg) translateZ(1440px);
+}
+
+.box-8 {
+    transform: rotateY(280deg) translateZ(1440px);
+}
+
+.box-9 {
+    transform: rotateY(320deg) translateZ(1440px);
+}
+
+@keyframes animation {
+    100% {
+        transform: translateZ(1440px) rotateY(360deg);
+    }
+}
+
+.inner-3d-box {
+    transform: rotateY(180deg);
+}

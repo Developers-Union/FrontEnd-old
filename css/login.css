@@ -1,0 +1,300 @@
+.lr {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.lr .lr-bar {
+    width: 30vw;
+    padding-bottom: 4vw;
+    margin-top: 5vh;
+    background-color: #2d2d3d;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Poppins', serif !important;
+}
+
+@media screen and (max-width: 1200px) {
+    .lr .lr-bar {
+        width: 80vw;
+    }
+}
+
+.lr .lr-bar h1 {
+    color: #ddd;
+    font-size: 3vw;
+    font-weight: 300;
+    height: 7vw;
+    line-height: 8vw;
+}
+
+@media screen and (max-width: 1200px) {
+    .lr .lr-bar h1 {
+        font-size: 10vw;
+        height: 17vw;
+        line-height: 18vw;
+    }
+}
+
+.lr .lr-bar .login-body {
+    display: flex;
+    width: 80%;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.lr .lr-bar .login-body p {
+    font-size: 1.3vw;
+    font-weight: 300;
+    margin: 1vw 0;
+    color: #009bff;
+}
+
+@media screen and (max-width: 1200px) {
+    .lr .lr-bar .login-body p {
+        font-size: 2.5vw;
+    }
+}
+
+.lr .lr-bar .login-body a {
+    transition: all 0.5s;
+    color: #dddddd;
+}
+
+.lr .lr-bar .login-body a:hover {
+    color: #009bff;
+}
+
+.lr .lr-bar .login-body .other-ways-login {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-bottom: 1vw;
+}
+
+.lr .lr-bar .login-body .other-ways-login ion-icon {
+    margin: .5vw 1vw;
+    color: #dddddd;
+    font-size: 2vw;
+    transition: all .5s;
+}
+
+.lr .lr-bar .login-body .other-ways-login ion-icon:hover {
+    color: #009bff;
+}
+
+.lr .lr-bar .login-body .input-bar {
+    width: 100%;
+    position: relative;
+}
+
+.lr .lr-bar .login-body .input-bar p::after {
+    font-size: .8vw;
+}
+
+.lr .lr-bar .login-body .input-bar textarea {
+    background-color: transparent;
+    resize: none;
+    overflow: hidden;
+    padding-left: .3vw;
+    border: none;
+    border-bottom: 1px solid white;
+    color: white;
+    outline: none;
+    width: 100%;
+    height: 2vw;
+    font-size: 1.3vw;
+    line-height: 2vw;
+    transition: all .5s;
+}
+
+@media screen and (max-width: 1200px) {
+    .lr .lr-bar .login-body .input-bar textarea {
+        height: 5vw;
+        font-size: 3vw;
+        line-height: 5vw;
+    }
+
+    .lr .lr-bar .login-body .input-bar p::after {
+        font-size: 1.5vw;
+    }
+}
+
+.lr .lr-bar .login-body .input-bar.none-input textarea {
+    border-bottom: 1px solid #ff0000 !important;
+    color: #ff0000;
+}
+
+.lr .lr-bar .login-body .input-bar.none-input textarea::placeholder {
+    color: #ff000066;
+}
+
+.lr .lr-bar .login-body .input-bar.none-input p::after {
+    content: 'requires input';
+    display: block;
+    margin-bottom: -1vw;
+    color: #ff0000;
+}
+
+.lr .lr-bar .login-body .input-bar.short-input textarea {
+    border-bottom: 1px solid #ff7f00 !important;
+    color: #ff7f00;
+}
+
+.lr .lr-bar .login-body .input-bar.short-input p::after {
+    content: 'too short';
+    margin-bottom: -1vw;
+    display: block;
+    color: #ff7f00;
+}
+
+.lr .lr-bar .login-body .input-bar.long-input textarea {
+    border-bottom: 1px solid #00ff00 !important;
+    color: #00ff00;
+}
+
+.lr .lr-bar .login-body .input-bar.long-input p::after {
+    content: 'too long';
+    display: block;
+    margin-bottom: -1vw;
+    color: #00ff00;
+}
+
+.lr .lr-bar .login-body .input-bar.wrong-input textarea {
+    border-bottom: 1px solid #af60ff !important;
+    color: #af60ff;
+}
+
+.lr .lr-bar .login-body .input-bar.wrong-input p::after {
+    content: 'input does not match the first time';
+    display: block;
+    margin-bottom: -1vw;
+    color: #af60ff;
+}
+
+.lr .lr-bar .login-body .input-bar.invalid-input textarea {
+    border-bottom: 1px solid #ff007f !important;
+    color: #ff007f;
+}
+
+.lr .lr-bar .login-body .input-bar.invalid-input p::after {
+    content: 'invalid input';
+    display: block;
+    margin-bottom: -1vw;
+    color: #ff007f;
+}
+
+.lr .lr-bar .login-body .input-bar.invalid-email textarea {
+    border-bottom: 1px solid #7ff !important;
+    color: #7ff;
+}
+
+.lr .lr-bar .login-body .input-bar.invalid-email p::after {
+    content: 'invalid email';
+    display: block;
+    margin-bottom: -1vw;
+    color: #7ff;
+}
+
+.lr .lr-bar .login-body textarea:hover {
+    border-bottom: 1px solid #009bffaa;
+}
+
+.lr .lr-bar .login-body textarea:focus {
+    border-bottom: 1px solid #009bff;
+}
+
+.lr .lr-bar .login-body .input-bar #password,
+.lr .lr-bar .login-body .input-bar #password-again {
+    -webkit-text-security: circle;
+}
+
+.lr .lr-bar .login-body #password-bar #strength {
+    display: none;
+    flex-direction: row;
+    align-items: center;
+    transition: all 1s;
+}
+
+.lr .lr-bar .login-body #password-bar #strength h3 {
+    line-height: 3vw;
+    font-family: 'Poppins', serif;
+    font-weight: 300;
+    font-size: 1vw;
+    color: #009bff;
+}
+
+.lr .lr-bar .login-body #password-bar #strength #strength-color {
+    height: 1vw;
+    margin-left: 2vw;
+    width: 3vw;
+    background-color: #555;
+}
+
+.lr .lr-bar button#register {
+    background: #009bff;
+    color: #000;
+    width: 12vw;
+    height: 3vw;
+    border: none;
+    font-size: 1.3vw;
+    font-family: 'Poppins', serif !important;
+    transition: all .5s;
+}
+
+.lr .lr-bar button#register:hover {
+    color: #dddddd;
+}
+
+@media screen and (max-width: 1200px) {
+    .lr .lr-bar button {
+        height: 7vw;
+        width: 20vw;
+        font-size: 2vw;
+        margin: 5vw;
+    }
+}
+
+.lr .lr-bar .login-body #verify-bar #email-sending-bar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-bottom: 1px solid #fff;
+    transition: all .5s;
+}
+
+.lr .lr-bar .login-body #verify-bar #email-sending-bar:hover {
+    border-bottom: 1px solid #009bff;
+}
+
+.lr .lr-bar .login-body #verify-bar #email-sending-bar #verifying-code {
+    border: none;
+    font-family: 'JetBrains Mono', serif;
+    font-size: 1.7vw;
+    letter-spacing: 1vw;
+}
+
+.lr .lr-bar .login-body #verify-bar #email-sending-bar #email-sending-button {
+    margin: 0;
+    border: none;
+    width: 60%;
+    background-color: transparent;
+    font-size: 1vw;
+    line-height: 2em;
+    text-align: right;
+    color: #009bff;
+}
+
+@media screen and (max-width: 1200px) {
+    .lr .lr-bar .login-body #verify-bar #email-sending-bar #email-sending-button {
+        height: 1vw;
+        font-size: 2vw;
+        line-height: 2vw;
+    }
+
+    .lr .lr-bar .login-body #verify-bar #email-sending-bar #verifying-code {
+        font-size: 4vw;
+        letter-spacing: 3vw;
+    }
+}
