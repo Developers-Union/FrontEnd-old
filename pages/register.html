@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Register - Developers Union</title>
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/login.css">
+    <link rel="shortcut icon" href="../images/logo.png" type="image/x-icon"/>
+    <link rel="stylesheet" href="../css/footer.css">
+</head>
+<body>
+<div class="container">
+    <div class="main">
+        <div class="header">
+            <ul class="nav">
+                <li><a href="../index.html">Main page</a></li>
+            </ul>
+        </div>
+        <section>
+            <div class="lr">
+                <div class="lr-bar">
+                    <h1>Register</h1>
+                    <div class="login-body">
+                        <div class="input-bar" id="username-bar">
+                            <p>input username:</p>
+                            <label for="username"></label><textarea name="username" id="username"></textarea>
+                        </div>
+                        <div class="input-bar" id="email-bar">
+                            <p>input email:</p>
+                            <label for="email"></label><textarea name="email" id="email"></textarea>
+                        </div>
+                        <div class="input-bar" id="verify-bar">
+                            <p>input verifying code:</p>
+                            <div id="email-sending-bar">
+                                <label for="verifying-code"></label><textarea name="verifying-code"
+                                                                              id="verifying-code"
+                                                                              maxlength="6"></textarea>
+                                <button id="email-sending-button" class="not-sent">Send email</button>
+                            </div>
+                        </div>
+                        <div class="input-bar" id="password-bar">
+                            <p>input password:</p>
+                            <label for="password"></label><textarea name="password" id="password"></textarea>
+                            <div id="strength">
+                                <h3>password strength:</h3>
+                                <div id="strength-color"></div>
+                            </div>
+                        </div>
+                        <div class="input-bar" id="password-again-bar">
+                            <p>password again:</p>
+                            <label for="password-again"></label><textarea name="password-again"
+                                                                          id="password-again"></textarea>
+                        </div>
+                        <p>Have got an account? <a href="login.html">Click here</a> to log in</p>
+                    </div>
+                    <button onclick="register()" id="register">Register</button>
+                </div>
+            </div>
+        </section>
+    </div>
+</div>
+</body>
+<script src="../js/register.js"></script>
+</html>

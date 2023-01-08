@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Log in - Developers Union</title>
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/login.css">
+    <script src="../js/login.js"></script>
+    <link rel="shortcut icon" href="../images/logo.png" type="image/x-icon"/>
+</head>
+<body>
+<div class="container">
+    <div class="main">
+        <div class="header">
+            <ul class="nav">
+                <li><a href="../index.html">Main page</a></li>
+            </ul>
+        </div>
+        <section>
+            <div class="lr">
+                <div class="lr-bar">
+                    <h1>Log in</h1>
+                    <div class="login-body">
+                        <div class="input-bar" id="username-bar">
+                            <p>username or email:</p>
+                            <label for="input_username"></label><textarea name="username" id="input_username"></textarea>
+                        </div>
+                        <div class="input-bar" id="password-bar">
+                            <p>password:</p>
+                            <label for="input_password"></label><textarea name="password" id="input_password"></textarea>
+                        </div>
+                        <p>Haven't got an account?
+                            <a href="register.html">Register</a>
+                            <br/>
+                            Forgot Password?
+                            <a href="javascript:void(0)">Change</a>
+                        </p>
+                        <p>Other ways to sign in:<br/>( not available now )</p>
+                        <div class="other-ways-login">
+                            <ion-icon name="logo-tiktok"></ion-icon>
+                            <ion-icon name="logo-apple"></ion-icon>
+                            <ion-icon name="logo-wechat"></ion-icon>
+                            <ion-icon name="logo-twitter"></ion-icon>
+                            <ion-icon name="logo-whatsapp"></ion-icon>
+                            <ion-icon name="logo-instagram"></ion-icon>
+                            <ion-icon name="logo-microsoft"></ion-icon>
+                            <ion-icon name="logo-facebook"></ion-icon>
+                            <ion-icon name="logo-google"></ion-icon>
+                            <ion-icon name="logo-youtube"></ion-icon>
+                            <ion-icon name="logo-amazon"></ion-icon>
+                        </div>
+                    </div>
+                    <button onclick="req()">Log in</button>
+                </div>
+            </div>
+        </section>
+    </div>
+</div>
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>

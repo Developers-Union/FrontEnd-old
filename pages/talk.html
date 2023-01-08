@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Talking</title>
+	<link rel="stylesheet" href="../css/index.css">
+    <!-- <link rel="stylesheet" href="../css/calendar.css"> -->
+    <script src="../js/index.js"></script>
+    <link rel="stylesheet" href="../css/waline.css"/>
+    <link rel="shortcut icon" href="../images/logo.png" type="image/x-icon"/>
+    <link rel="stylesheet" href="../css/footer.css">
+  </head>
+  <body>
+    <style>
+        body .container {
+            background-color: black;
+            box-sizing: border-box;
+            /* height: 500vw; */
+            padding: 0 2vw;
+        }
+    </style>
+	<div class="container">
+        <div class="main">
+            <ul class="header">
+                <ul class="nav">
+                    <li>
+                        <a href="../index.html">Back to main page</a>
+                    </li>
+                </ul>
+            </ul>
+            <div class="shop" id="talk">
+                <h1 style="color:white;">Talking</h1>
+                <h2 style="color:white;">Talking Rules:</h2>
+				<h2 style="color:white;"></h2>
+				<h2 style="color:white;display: inline;">- Don't discuss low-grade fun, sensitive topics, reactionary words and low-quality reviews.</h2>
+				<h2 style="color:white;display: inline;">- You can discuss technical issues.</h2>
+				<h2 style="color:white;"> NOW START YOUR TALKING TOUR ! </h2>
+            </div>
+            <div id="waline" style="background-color: white;padding-top:20px;padding-right:30px;padding-bottom:30px;padding-left:20px;border-radius:25px;"></div>
+            <script type="module">
+                import { init } from 'https://unpkg.com/@waline/client@v2/dist/waline.mjs';
+
+                init({
+                    el: '#waline',
+                    serverURL: 'https://112233.tcxone.eu.org',
+                });
+            </script>
+        </div>
+    </div>
+    <div style="background-color: black;"><h1></h1></div>
+    <footer>
+        <hr style="FILTER:alpha(opacity=100,finishopacity=0,style=2)" width="80%"color=white SIZE=2>
+        <div data-v-7958fe72="" data-v-109e0409="" class="wrapper wrapped lfe-body"><div data-v-7958fe72="" class="background" style="background: black; filter: blur(0px) brightness(100%);"></div> <div data-v-3e2ae97b="" data-v-109e0409="" class="footer" data-v-7958fe72=""><img data-v-3e2ae97b="" src="../images/logo.png" class="logo-img"> <div data-v-3e2ae97b="" class="slogan">
+            <p style="font-weight: 400;">At Developers Union<br data-v-3e2ae97b="">
+            Enjoy The Coding</p> 
+        </div> <img data-v-3e2ae97b="" src="../images/qrcode.png" class="qr-img" width="" height=""> <div data-v-3e2ae97b="" class="info"><p data-v-3e2ae97b=""><a data-v-303bbf52="" data-v-3e2ae97b="" href="./talk.html" colorscheme="default" class="color-default">
+                Talk
+            </a> |
+            <a data-v-303bbf52="" data-v-3e2ae97b="" href="./register.html" colorscheme="default" class="color-default">
+                Rigister
+            </a> |
+            <a data-v-303bbf52="" data-v-3e2ae97b="" href="./login.html" colorscheme="default" class="color-default">
+                Login
+            </a> |
+            <a data-v-303bbf52="" data-v-3e2ae97b="" href="#" colorscheme="default" class="color-default">
+                Top
+            </a> <br data-v-3e2ae97b=""> <a data-v-303bbf52="" data-v-3e2ae97b="" href="" colorscheme="default" class="color-default">
+                
+            </a> 
+            <a data-v-303bbf52="" data-v-3e2ae97b="" href="/judgement" colorscheme="default" class="color-default">
+                
+            </a> 
+            <a data-v-303bbf52="" data-v-3e2ae97b="" href="/blog/luogu/social-rules" colorscheme="default" class="color-default">
+                
+            </a> 
+            <a data-v-303bbf52="" data-v-3e2ae97b="" href="" target="_blank" colorscheme="default" class="color-default">
+                
+            </a> <br data-v-3e2ae97b="">
+        
+            Developed by the
+            <a data-v-303bbf52="" data-v-3e2ae97b="" href="https://github.com/Developers-Union" target="_blank" colorscheme="default" class="color-default">
+                Developers Union Dev Team
+            </a> <br data-v-3e2ae97b="">
+            2022-2023 , © Developers Union
+            <br data-v-3e2ae97b="">
+            All rights reserved.
+            <br data-v-3e2ae97b=""> <a data-v-303bbf52="" data-v-3e2ae97b="" href="http://beian.miit.gov.cn" target="_blank" colorscheme="default" class="color-default">
+                
+            </a>
+            To Developers 
+            </p></div></div></div>
+        </footer>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/scripts.js"></script>
+  </body>
+</html>
